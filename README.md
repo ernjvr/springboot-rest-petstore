@@ -9,3 +9,6 @@ GET /api/pets
 
 users url:
 GET /api/users
+
+swagger url:
+/swagger-ui.html
