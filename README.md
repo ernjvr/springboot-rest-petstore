@@ -7,5 +7,5 @@ GET /api/orders
 pets url:
 GET /api/pets
 
-usres url:
+users url:
 GET /api/users
