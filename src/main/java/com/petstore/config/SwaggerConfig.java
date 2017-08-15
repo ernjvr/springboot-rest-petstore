@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @PropertySource("classpath:swagger.properties")
 public class SwaggerConfig {
 
-    private static final String SWAGGER_API_VERSION = "1.0";
+    private static final String SWAGGER_API_VERSION = "2.0";
     private static final String LICENNCE = "Licence";
     private static final String TITLE = "Pet Store REST API";
     private static final String DESCRIPTION = "RESTful API for Pet Store";
@@ -27,13 +27,14 @@ public class SwaggerConfig {
                 .title(TITLE)
                 .description(DESCRIPTION)
                 .license(LICENNCE)
-                .version("1.0")
+                .version(SWAGGER_API_VERSION)
                 .build();
     }
 
     @Bean
     public Docket petStoreApi() {
         return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("public-api")
                 .apiInfo(apiInfo())
                 .pathMapping("/")
                 .select()
