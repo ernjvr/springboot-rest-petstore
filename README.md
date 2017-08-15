@@ -12,3 +12,6 @@ GET /api/users
 
 swagger url:
 /swagger-ui.html
+
+swagger.json file location:
+springboot-rest-petstore/src/main/resources/swagger.json
